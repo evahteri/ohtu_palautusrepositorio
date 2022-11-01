@@ -36,3 +36,15 @@ class TestStatistics(unittest.TestCase):
         top3_names = [result[0].name, result[1].name, result[2].name]
 
         self.assertEqual(top3_names, ["Gretzky", "Lemieux", "Yzerman"])
+    
+    def test_top_goals(self):
+        result = self.statistics.top(3, 2)
+        top3_names = [result[0].name, result[1].name, result[2].name]
+
+        self.assertEqual(top3_names, ["Lemieux", "Yzerman", "Kurri"])
+    
+    def test_top_assists(self):
+        result = self.statistics.top(3, 3)
+        top3_names = [result[0].name, result[1].name, result[2].name]
+
+        self.assertEqual(top3_names, ["Gretzky", "Yzerman", "Lemieux"])
