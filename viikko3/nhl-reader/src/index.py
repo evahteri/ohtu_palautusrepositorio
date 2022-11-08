@@ -20,11 +20,16 @@ def main():
                 )
 
             players.append(player)
+    
+    players.sort(key=get_points ,reverse=True)
 
     print("Oliot:")
 
     for player in players:
         print(player)
+
+def get_points(player):
+    return player.goals + player.assists
 
 if __name__ == "__main__":
     main()
