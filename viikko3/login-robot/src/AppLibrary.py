@@ -31,3 +31,4 @@ class AppLibrary:
 
     def create_user(self, username, password):
         self._user_service.create_user(username, password)
+    
