@@ -15,5 +15,3 @@ Start, Stop, Continue, More of, Less of Wheel - menetelmässä jaetaan palaute m
 Vastausten pohjalta täytetään “kiekko”, joka voidaan piirtää taululle ja sitä voidaan tarkastella yhdessä, jonka jälkeen päätetään kehitystoimenpiteistä seuraavaa sprinttiä varten. 
 
 Glad, Sad, Mad - menetelmässä kysytään tiimin jäseniltä palautetta, joka jaotellaan kolmeen nimessä mainittuihin osioihin. Palautteen ei välttämättä tarvitse liittyä tiimin sisäisiin kompastuskiviin, vaan palaute voi olla myös jotain ulkoista, esimerkiksi “ilmastointi on toimistossa liian kovalla”. Palautteenannon jälkeen tiimi äänestää, mistä asioista keskustellaan yksityiskohtaisemmin. Keskustelussa edetään esimerkiksi Scrum masterin johdolla äänestetyistä asioista eteenpäin niin kauan kunnes kaikki palautteet on käsitelty tai tunti on kulunut. 
-
-edit
