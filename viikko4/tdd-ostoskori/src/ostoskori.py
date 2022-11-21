@@ -43,10 +43,11 @@ class Ostoskori:
                 if maara == 1:
                     self.tavarat.pop(indeksi)
             indeksi += 1
+        self.tavaroiden_lukumäärä -= 1
 
     def tyhjenna(self):
-        pass
-        # tyhjentää ostoskorin
+        self.tavaroiden_lukumäärä = 0
+        self.tavarat = []
 
     def ostokset(self):
         return self.tavarat
