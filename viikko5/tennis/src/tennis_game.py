@@ -2,56 +2,48 @@ class TennisGame:
     def __init__(self, player1_name, player2_name):
         self.player1_name = player1_name
         self.player2_name = player2_name
-        self.m_score1 = 0
-        self.m_score2 = 0
+        self.player1_score = 0
+        self.player2_score = 0
 
     def won_point(self, player_name):
         if player_name == "player1":
-            self.m_score1 = self.m_score1 + 1
+            self.player1_score += 1
         else:
-            self.m_score2 = self.m_score2 + 1
+            self.player2_score += 1
+
+    def tie(self):
+        tie_table = {0:"Love-All", 1: "Fifteen-All", 2: "Thirty-All", 3: "Forty-All"}
+
+        if self.player1_score not in [0,1,2,3]:
+            return "Deuce"
+    
+        return tie_table[self.player1_score]
+    
+
+    def advantage(self):
+        point_difference = self.player1_score - self.player2_score
+
+        if point_difference == 1:
+            return "Advantage player1"
+        if point_difference == -1:
+            return "Advantage player2"
+        if point_difference >= 2:
+            return "Win for player1"
+        if point_difference <= -2:
+            return "Win for player2"
+        
 
     def get_score(self):
         score = ""
-        temp_score = 0
+        score_table = {0:"Love", 1:"Fifteen", 2:"Thirty", 3:"Forty"}
 
-        if self.m_score1 == self.m_score2:
-            if self.m_score1 == 0:
-                score = "Love-All"
-            elif self.m_score1 == 1:
-                score = "Fifteen-All"
-            elif self.m_score1 == 2:
-                score = "Thirty-All"
-            elif self.m_score1 == 3:
-                score = "Forty-All"
-            else:
-                score = "Deuce"
-        elif self.m_score1 >= 4 or self.m_score2 >= 4:
-            minus_result = self.m_score1 - self. m_score2
+        if self.player1_score == self.player2_score:
+            score = self.tie()
 
-            if minus_result == 1:
-                score = "Advantage player1"
-            elif minus_result == -1:
-                score = "Advantage player2"
-            elif minus_result >= 2:
-                score = "Win for player1"
-            else:
-                score = "Win for player2"
+        elif self.player1_score >= 4 or self.player2_score >= 4:
+            score = self.advantage()
+
         else:
-            for i in range(1, 3):
-                if i == 1:
-                    temp_score = self.m_score1
-                else:
-                    score = score + "-"
-                    temp_score = self.m_score2
-
-                if temp_score == 0:
-                    score = score + "Love"
-                elif temp_score == 1:
-                    score = score + "Fifteen"
-                elif temp_score == 2:
-                    score = score + "Thirty"
-                elif temp_score == 3:
-                    score = score + "Forty"
+            score = f"{score_table[self.player1_score]}-{score_table[self.player2_score]}"
 
         return score
