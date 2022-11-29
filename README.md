@@ -14,7 +14,7 @@ Viikottaiset palautukset:
 
 - [Viikko 4](https://github.com/evahteri/ohtu_palautusrepositorio/tree/main/viikko4) (Tehty)
 
-- [Viikko 5](https://github.com/evahteri/ohtu_palautusrepositorio/tree/main/viikko5) (Ei tehty)
+- [Viikko 5](https://github.com/evahteri/ohtu_palautusrepositorio/tree/main/viikko5) (Tehty)
 
 - [Viikko 6](https://github.com/evahteri/ohtu_palautusrepositorio/tree/main/viikko6) (Ei tehty)
 
