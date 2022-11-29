@@ -16,7 +16,8 @@ class Kayttoliittyma:
         self.komennot = {
             Komento.SUMMA: Summa(self._sovellus),
             Komento.EROTUS: Erotus(self._sovellus),
-            Komento.NOLLAUS: Nollaus(self._sovellus)
+            Komento.NOLLAUS: Nollaus(self._sovellus),
+            Komento.KUMOA: Kumoa(self._sovellus)
 
         }
 
@@ -98,6 +99,14 @@ class Nollaus:
     def __init__(self, sovellus):
         self.sovellus = sovellus
 
-    def suorita(self):
+    def suorita(self, syote):
 
         return self.sovellus.nollaa()
+
+class Kumoa:
+    def __init__(self, sovellus):
+        self.sovellus = sovellus
+
+    def suorita(self, syote):
+
+        return self.sovellus.kumoa()
