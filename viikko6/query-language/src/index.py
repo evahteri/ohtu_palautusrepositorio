@@ -20,6 +20,24 @@ def main():
 
     for player in stats.matches(matcher):
         print(player)
+    
+    matcher = (
+        query
+            .oneOf(
+                query.playsIn("PHI")
+                    .hasAtLeast(10, "assists")
+                    .hasFewerThan(5, "goals")
+                    .build(),
+                query.playsIn("EDM")
+                    .hasAtLeast(50, "points")
+                    .build()
+            )
+            .build()
+    )
+    print("or players:")
+
+    for player in stats.matches(matcher):
+        print(player)
 
 
 if __name__ == "__main__":
