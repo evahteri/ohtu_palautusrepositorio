@@ -23,3 +23,5 @@ Viikottaiset palautukset:
 - [Viikko 7](https://github.com/evahteri/ohtu_palautusrepositorio/tree/main/viikko7) (Tehty)
 
 
+ - [Viikko 7 mergetty pull request](https://github.com/evahteri/ohtu_palautusrepositorio/blob/main/MERGE.md)
+
