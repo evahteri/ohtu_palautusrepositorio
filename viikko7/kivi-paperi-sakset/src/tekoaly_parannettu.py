@@ -49,3 +49,6 @@ class TekoalyParannettu:
 
         # Tehokkaampiakin tapoja löytyy, mutta niistä lisää
         # Johdatus Tekoälyyn kurssilla!
+
+# Täällä voi määrittää muistin määrän
+tekoaly_parannettu = TekoalyParannettu(10)

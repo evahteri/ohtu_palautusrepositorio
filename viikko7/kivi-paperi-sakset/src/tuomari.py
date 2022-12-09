@@ -34,3 +34,5 @@ class Tuomari:
             return True
 
         return False
+
+tuomari = Tuomari()

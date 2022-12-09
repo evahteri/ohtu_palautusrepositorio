@@ -20,6 +20,6 @@ Viikottaiset palautukset:
 
  - [Viikko 6 pull request](https://github.com/evahteri/ohtu_palautusrepositorio/blob/main/PULL.md)
 
-- [Viikko 7](https://github.com/evahteri/ohtu_palautusrepositorio/tree/main/viikko7) (Ei tehty)
+- [Viikko 7](https://github.com/evahteri/ohtu_palautusrepositorio/tree/main/viikko7) (Tehty)
 
 
